@@ -1,0 +1,14 @@
+body{
+    background-image: url(img/winterblessed-warwick-prestige-edition-league-of-legends-lol-wallpaper-5120x2160_16.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+h1{
+    text-align: center;
+    position: sticky;
+    top: 0;
+    color: #15C8B5;
+    text-decoration-style: double;
+}
