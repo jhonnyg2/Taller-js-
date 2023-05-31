@@ -1,14 +1,33 @@
 body{
-    background-image: url(img/winterblessed-warwick-prestige-edition-league-of-legends-lol-wallpaper-5120x2160_16.jpg);
-    background-size: cover;
+    background-color: #000000;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     color: white;
 }
 h1{
     text-align: center;
-    position: sticky;
-    top: 0;
     color: #15C8B5;
     text-decoration-style: double;
+}
+article div{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}/*
+.cols25{
+    margin-left: 33%;
+}*/
+header{
+    text-align: center;
+    position: sticky;
+    background-color: black;
+    top: 0;
+    color: #15C8B5;
+}
+#titu1 ,#titu2{
+    text-align: center;
+    position: sticky;
+    background-color: black;
+    top: 0;
+    color: #15C8B5;
 }

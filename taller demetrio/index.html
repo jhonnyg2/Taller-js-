@@ -11,118 +11,145 @@
 </head>
 
 <body>
+  <header>
     <h1>Prueba Taller</h1>
-    <div class="container text-center">
-        <div class="row row-cols-3">
-          <div class="col">
-          <h3>Ejercicio 1</h3>  
-          <p class="mi">•	Imprimir los números del 1 al 50 cada uno con su respectivo cuadrado.</p>
-          <input type="submit" value="imprimir" onclick="ejer1()">
-          <input type="submit" value="limpiar" onclick="lim1()">
-          <div id="tabla1">
-
-          </div>
-          </div>
-          <div class="col">
-            <h3>Ejercicio 2</h3>
-            <p>•	Imprimir números impares del 1 la 100 y seguidamente otro con los números pares de 102 a 200.</p>  
-            <input type="submit" value="Imprimir" onclick="ejer2()">
-            <input type="submit" value="limpiar" onclick="lim2()">
-            <div id="par">
-
-            </div>
-          </div>
-          <div class="col" id="listado">            
-            <h3>Ejercicio 3</h3>
-            <p class="mi">•	Imprimir números pares en forma descendente hasta 2 que son menores o iguales a un número natural dado.</p> 
-            <br><input type="text" name="valor" id="valor">  
-            <br><br><input type="text" name="result3" id="resul3" disabled>             
-            <br><br><input type="button" value="Generar" onclick="ej3()"> 
-          </div>
-          <div class="col" id="pond">
-            <h3>Ejercicio 4</h3> 
-            <p>•	Hallar el promedio ponderado de n números.</p> 
-          </div>
-          <br><div class="col" id="buscNum">
-            <h3>Ejercicio 5</h3>
-            <p>•	Buscar un número determinado en un arreglo y devolver su posición, si no se encuentra devolver “no se encuentra”</p>  
-            <br><input type="button" value="Generar ejercicio 5" onclick="">
-          </div>
-          <div class="col" id="limit">
-            <h3>Ejercicio 6</h3>
-            <p>•	Crear un arreglo e imprimirlo con la dimensión que asigne el usuario</p>
-            <br><input type="text" name="dimen" id="dimen">
-            <br><br><input type="text" name="result6" id="resul6" disabled>  
-            <br><br><input type="button" value="Generar Arreglo" onclick="limit()">   
-          </div>
-          <div class="col" id="">
-            <h3>Ejercicio 7</h3> 
-            <p>•	Contar elementos repetidos de un arreglo e imprimirlos.</p>
-            <br><br><input type="text" name="resul7" id="resul7" disabled>
-            <br><br><input type="text" name="repi" id="repi" disabled>
-            <br><br><input type="button" value="Generar arreglo" onclick="ejer7()">   
-          </div>
-          <div class="col" id="">
-            <h3>Ejercicio 8</h3> 
-            <p>•	Convertir un número de sistema decimal a binario(mediante el uso de divisiones sucesivas)</p>
-            <br><input type="text" name="num" id="num" placeholder="Número">  
-            <br><br><input type="text" name="resul8" id="resul8" disabled>             
-            <br><br><input type="button" value="Generar" onclick="conv()">  
-          </div>
-          <div class="col" id="">
-            <h3>Ejercicio 9</h3> 
-            <p>•	Convertir un binarios en decimal.</p>
-            <br><input type="number" name="bin" id="bin" placeholder="Número Binario">  
-            <br><br><input type="text" name="resul9" id="resul9" disabled>             
-            <br><br><input type="button" value="Generar" onclick="bina()">  
-          </div>
-          <div class="col" id="">
-            <h3>Ejercicio 10</h3> 
-            <p>•	Multiplicar 2 arreglos</p> 
-          </div>
-          <div class="col" id="">
-            <h3>Ejercicio 11</h3> 
-            <p>•	Hallar producto punto entre dos arreglos</p> 
-          </div>
-          <div class="col" id="">
-            <h3>Ejercicio 12</h3> 
-            <p>•	En el 2022 el país A tendrá una población de 25 millones de habitantes y el país B de 18,9 millones, las tasas de crecimiento anual de la población serán de 2% y 3% respectivamente
-                  desarrollar un algoritmo para informar en que año la población del país B superará a la de A.</p> 
-            <input type="button" value="Calcular" onclick="ejer12()"><br>
-            <br><input type="text" name="anno" id="anno" size="36" onclick="" disabled> 
-          </div>
-          <div class="col" id="">
-            <h3>Ejercicio 13</h3> 
-            <p>•	Escribir un programa que muestre la suma de la serie (1*1)+(2*2)+(3*3)+(4*4)…(n*n) 
-                   hasta que la suma sea menor al número digitado por el usuario. Debe mostrar la secuencia de manera ordenada.</p> 
-          </div>
-          <div class="col" id="">
-            <h3>Ejercicio 14</h3> 
-            <p>•	Transforme el siguiente for: 
-              for (a = 0, b = 0; a < 7; a++, b += 2){
-              console.log(a,b)
-              }
-              En su correspondiente con while.
-              </p>
-              <br><br><input type="text" name="resul14" id="resul14" disabled>             
-              <br><br><input type="button" value="Generar" onclick=""> 
-          </div>
-          <div class="col" id="">
-            <h3>Ejercicio 15</h3> 
-            <p></p> 
-          </div>
-          <div class="col" id="">
-            <h3>Ejercicio 16</h3> 
-            <p></p> 
-          </div>
-          <div class="col" id="fibbo">
-            <br><h3>Ejercicio 17</h3> 
-            <p>•	Crear la famosa serie Fibonacci</p>
-            <input type="button" value="Serie Fibonacci" onclick="fibo()"><br>
-            <br><input type="text" name="result3" id="fibo" size="36" disabled>  
-          </div>
-        </div>
-      </div>
-      
+  </header>
+  <section>
+    <article>
+      <div class="container text-center">
+              <div class="row row-cols-3">
+                <div class="col">
+                  <h1>PUNTO 1</h1>
+                <p>Imprimir los números del 1 al 50 cada uno con su respectivo cuadrado.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 2</h1>
+                <p>Imprimir números impares del 1 la 100 y seguidamente otro con los números pares de 102 a 200.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 3</h1>
+                <p>Imprimir números pares en forma descendente hasta 2 que son menores o iguales a un número natural dado.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 4</h1>
+                <p>Hallar el promedio ponderado de n números.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 5</h1>
+                <p>Buscar un número determinado en un arreglo y devolver su posición, si no se encuentra devolver “no se
+                  encuentra”</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 6</h1>
+                <p>Crear un arreglo e imprimirlo con la dimensión que asigne el usuario</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 7</h1>
+                <p>Contar elementos repetidos de un arreglo e imprimirlos.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 8</h1>
+                <p>Convertir un número de sistema decimal a binario(mediante el uso de divisiones sucesivas.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 9</h1>
+                <p>Convertir un binarios en decimal.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 10</h1>
+                <p>Multiplicar 2 arreglos</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 11</h1>
+                <p>Hallar producto punto entre dos arreglos</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 12</h1>
+                <p>En el 2022 el país A tendrá una población de 25 millones de habitantes y el país B de 18,9 millones, las tasas
+                  de crecimiento anual de la población serán de 2% y 3% respectivamente desarrollar un algoritmo para informar
+                  en que año la población del país B superará a la de A.</p>
+                </div>
+              </div>
+              <h1 id="titu2">Ejercicios solo con estructura While</h1>
+              <div class="row row-cols-3">
+                
+                <div class="col">
+                  <h1>PUNTO 13</h1>
+                <p>Escribir un programa que muestre la suma de la serie (1*1)+(2*2)+(3*3)+(4*4)…(n*n) hasta que la suma sea
+                  menor al número digitado por el usuario. Debe mostrar la secuencia de manera ordenada.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 14</h1>
+                <p>Transforme el siguiente for:
+                  for (a = 0, b = 0; a < 7; a++, b += 2){
+                    console.log(a,b)
+                    }
+                    En su correspondiente con while.
+                </p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 15</h1>
+                <p>Crear un arreglo con 100 números aleatorios, recórrelo y en el momento que encuentre un número primo
+                  detener el bucle imprimir el número y la posición. “crear botón para ejecutar el script”.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 16</h1>
+                <p>Encontrar Máximo común divisor de dos números.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 17</h1>
+                <p>La famosa serie Fibonacci.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 18</h1>
+                <p>Leer un número entero y sumar los números que lo componen. Botón para iniciar el ingreso de los números y
+                  se detiene al ingresar número negativo.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 19</h1>
+                <p>Crear arreglo de 20 campos con números aleatorios imprimirlo y ordenarlo mediante método burbuja.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 20</h1>
+                <p>Solicitar el ingreso de una frase y una letra. Debe recorrer carácter por carácter y mostrar su posición en caso
+                  de que se cumpla sino debe informar que no hay coincidencia.</p>
+                </div>
+              </div>
+                <h1 id="titu3">Crear matriz con 6*6 con números aleatorios</h1>
+              <div class="row row-cols-3">
+                <div class="col">
+                  <h1>PUNTO 21</h1>
+                <p>Buscar elemento par en diagonal principal</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 22</h1>
+                <p>Buscar el nuero mas grande y más pequeño de una matriz.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 23</h1>
+                <p>Ordenar en forma ascendente una fila o una columna, solicitar el número de la fila o columna a
+                  ordenar.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 24</h1>
+                <p>Chequear si dos matrices son iguales.</p>
+                </div>
+                <div class="cols25">
+                  <h1>PUNTO 25</h1>
+                <p>Permitir al usuario crear matriz 4*4 Chequear si matriz es mágica. E imprimir número mágico.</p>
+                </div>
+                <div class="col">
+                  <h1>PUNTO 26</h1>
+                <p>Verificar si una matriz es identidad.</p>
+                </div>
+                <div class="cols25">
+                  <h1>PUNTO 27</h1>
+                <p>Multiplicar 2 matrices.</p>
+                </div>
+              </div>
+    </article>
+    
+    
+  </section>  
 </body>
 </html>
